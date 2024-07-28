@@ -1,0 +1,20 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* @layer components {
+  @apply .banner-slider {
+    background-image: url("../Assets/Images/civil_war.jpg");
+    min-height: 450px;
+  }
+  @media (min-width: 1280px) {
+    min-width: 850px;
+  }
+} */
