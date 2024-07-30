@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Grocify - E-Commerce Website</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div
+      style="background-image: url(Assets/Images/bg.jpg)"
+      class="relative container h-screen bg-cover bg-no-repeat bg-center px-20 py-4"
+    >
+      <!-- navigation bar -->
+      <nav class="flex items-center bg-[#ffffff30] px-6 py-2 rounded-md">
+        <img src="Assets/Images/logo.svg" class="w-32 cursor-pointer" />
+        <ul class="flex-1 text-center">
+          <li class="list-none inline-block px-10">
+            <a href="index.html" class="text-white px-2 hover:text-yellow-500">Home</a>
+          </li>
+          <li class="list-none inline-block px-10">
+            <a href="aboutus.html" class="text-white px-2 hover:text-yellow-500">About</a>
+          </li>
+          <li class="list-none inline-block px-10">
+            <a href="products.html" class="text-white px-2 hover:text-yellow-500"
+              >Products</a
+            >
+          </li>
+          <li class="list-none inline-block px-10">
+            <a href="#" class="text-white px-2 hover:text-yellow-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <img src="Assets/Images/cart.svg" class="w-7 cursor-pointer" />
+      </nav>
+
+      <!-- Hero -->
+      <!-- Content -->
+      <div class="text-white mt-52 max-w-[50%]">
+        <h1 class="text-3xl leading-normal font-semibold">
+          <span class="text-6xl">Groceries</span> <br />
+          Delivered in 20 minutes.
+        </h1>
+        <p class="max-w-xl font-extralight font-sans">
+          This is the ultimate grocery store. We offer wide range of products
+          including Meat, Fresh Vegetables and Fruits, Dairy, Baked goods and
+          more.
+        </p>
+        <div class="mt-6">
+          <button
+            class="bg-[rgba(234,179,8,30)] text-white font-bold py-2 px-4 rounded-md mr-4 hover:bg-transparent hover:border hover:border-white"
+          >
+            Order Now
+          </button>
+          <button
+            class="bg-[rgba(220,38,38,70)] font-bold py-2 px-4 rounded-md hover:bg-transparent hover:border hover:border-white"
+          >
+            Download Our App
+          </button>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div>
+        <img
+          src="Assets/Images/grocery.svg"
+          class="absolute bottom-0 right-0 h-[85vh]"
+        />
+      </div>
+    </div>
+  </body>
+</html>

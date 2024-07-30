@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>About Us | Grocify</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div
+      style="background-image: url(Assets/Images/bg.jpg)"
+      class="relative container h-screen bg-cover bg-no-repeat bg-center px-20 py-4"
+    >
+      <!-- navigation bar -->
+      <nav class="flex items-center bg-[#ffffff30] px-6 py-2 rounded-md">
+        <img src="Assets/Images/logo.svg" class="w-32 cursor-pointer" />
+        <ul class="flex-1 text-center">
+          <li class="list-none inline-block px-10">
+            <a href="index.html" class="text-white px-2 hover:text-yellow-500"
+              >Home</a
+            >
+          </li>
+          <li class="list-none inline-block px-10">
+            <a href="aboutus.html" class="text-white px-2 hover:text-yellow-500"
+              >About</a
+            >
+          </li>
+          <li class="list-none inline-block px-10">
+            <a href="products.html" class="text-white px-2 hover:text-yellow-500"
+              >Products</a
+            >
+          </li>
+          <li class="list-none inline-block px-10">
+            <a href="#" class="text-white px-2 hover:text-yellow-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <img src="Assets/Images/cart.svg" class="w-7 cursor-pointer" />
+      </nav>
+
+      <!-- Hero -->
+      <div class="flex mt-6 mx-auto justify-between items-center">
+        <div class="text-blue-400 max-w-[50%] ml-14">
+          <h1 class="text-3xl leading-normal font-semibold text-white">
+            About <br /><span class="text-6xl">Grocify</span>
+          </h1>
+          <p class="text-base font-extralight font-sans max-w-xl">
+            At Grocify, we're passionate about transforming the way you shop for
+            groceries. We beleive grocery shopping should be an enjoyable and
+            stress-free experience, tailored to your unique needs and
+            preferences.
+          </p>
+        </div>
+
+        <!-- image -->
+        <div class="flex justify-center items-center">
+          <img
+            src="Assets/Images/supermarket.svg"
+            class="w-[25vw] rounded-md mr-14"
+          />
+        </div>
+      </div>
+
+      <div class="flex mt-12 mx-auto">
+        <!-- mission -->
+        <div class="text-blue-400 max-w-[50%] ml-14">
+          <h1 class="text-6xl font-semibold text-[rgba(220,38,38,70)]">Our Mission</h1>
+          <p class="font-extralight font-sans max-w-xl">
+            We're on a mission to simplify your life by offering; Unmatched
+            Selection, Best Quality and Transparenncy you can trust.
+          </p>
+        </div>
+        <!-- Values -->
+        <div class="text-blue-400 max-w-[50%] ml-14">
+          <h1 class="text-6xl font-semibold text-yellow-500">Our Values</h1>
+          <p class="font-extralight font-sans max-w-xl">
+            At Grocify, we prioritise customer satifaction and community
+            well-being, all while embracing sustainable practices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
