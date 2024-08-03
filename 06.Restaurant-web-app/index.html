@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Homepage | Restaurant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="flex flex-col min-h-screen relative bg-red-800">
+    <!-- bg image -->
+    <div class="absolute inset-0 flex items-center ml-[30rem]">
+      <img
+        src="Assets/Images/Pizza2.png"
+        class="absolute inset-0 object-cover w-full h-full"
+      />
+    </div>
+
+    <!-- nav -->
+    <div class="nav-container relative z-10 mt-10 mx-auto">
+      <nav class="flex items-center justify-between">
+        <!-- nav tabs -->
+        <ul class="flex text-center text-white">
+          <li class="mx-6 font-bold text-lg">
+            <a href="reservationTable.html"> Reservations </a>
+          </li>
+          <li class="mx-6 font-bold text-lg">
+            <a href="menu.html"> Menu </a>
+          </li>
+          <li class="mx-6 font-bold text-lg">
+            <a href="reviews.html"> Reviews </a>
+          </li>
+          <li class="mx-6 font-bold text-lg">
+            <a href="DineInReservations.html"> Dine In </a>
+          </li>
+          <li class="mx-6 font-bold text-lg">
+            <a href="chefs.html"> Chefs </a>
+          </li>
+        </ul>
+        <!-- Search -->
+        <form action="/search" method="get" class="flex items-center ml-16">
+          <input
+            type="text"
+            class="rounded-lg h-10 pl-4 placeholder-gray-700 bg-red-500 border-2 border-red-900"
+            placeholder="Search"
+          />
+        </form>
+        <!-- options -->
+        <ul class="flex items-center text-center text-white mx-32">
+          <li class="mx-4 font-bold text-lg">
+            <i class="fa-regular fa-heart fa-2xl"></i>
+          </li>
+          <li class="mx-4 font-bold text-lg">
+            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+          </li>
+        </ul>
+        <!-- btns -->
+        <div class="flex items-center gap-4">
+          <button
+            class="text-white font-semibold bg-green-800 rounded-full h-10 w-20 hover:bg-red-500"
+          >
+            Log in
+          </button>
+          <button
+            class="text-white font-semibold bg-green-800 rounded-full h-10 w-20 hover:bg-red-500"
+          >
+            Sign up
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- hero -->
+    <div class="flex items-center relative z-10 max-w-[60%]">
+      <h1 class="text-white text-6xl font-semibold mt-16 mx-20 leading-snug">
+        Lorem ipsum dolor <br />
+        Exceptuer sint occaecat <br />
+        <span class="text-green-600">Experiences</span>
+      </h1>
+    </div>
+    <div class="flex relative z-10 max-w-[40%]">
+      <h1 class="mx-20 mt-8 text-white text-lg">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+        quas suscipit, tempora laborum voluptates facilis culpa, aspernatur,
+        esse veniam cum officia. Enim aspernatur sunt ipsa quasi laboriosam
+        impedit et, eos ab quia, illum nisi!
+      </h1>
+    </div>
+    <div class="flex relative z-10 mt-8 mx-20">
+      <div class="w-96 h-20 border border-white rounded-lg flex items-center justify-evenly">
+        <a href="#">
+            <div
+          class="flex justify-center gap-2 items-center w-28 h-14 bg-green-500 rounded-lg border-green-900"
+        >
+          <i class="fa-solid fa-truck text-white"></i>
+          <span class="text-white font-medium">Delivery</span>
+        </div>
+        </a>
+        <a href="#">
+            <div
+          class="flex justify-center gap-2 items-center w-28 h-14 bg-green-500 rounded-lg border-green-900"
+        >
+        <i class="fa-solid fa-location-dot text-white text-lg"></i>
+          <span class="text-white font-medium">Pick Up</span>
+        </div>
+        </a>
+        <a href="DineInReservations.html">
+            <div
+          class="flex justify-center gap-2 items-center w-28 h-14 bg-green-500 rounded-lg border-green-900"
+        >
+        <i class="fa-solid fa-utensils text-white"></i>
+          <span class="text-white font-medium">Dine In</span>
+        </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

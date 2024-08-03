@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="p-0 m-0 box-border">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Restaurant Web App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="flex justify-center items-center">
+    <div class="relative">
+      <img src="Assets/Images/Waiter.jpg" class="w-[20vw]" />
+      <div class="absolute top-0 w-[20vw] h-full bg-gradient-to-b from-[#ffffff00] to-[#000000]"></div>
+      <div class="p-6 z-10 absolute top-0 text-white">
+        <h1 class="font-bold text-lg text-orange-500">Opening Hours</h1>
+        <p class="">Monday - Thursday</p>
+        <p class="font-light">08:00am - 10:00pm</p>
+        <p>Friday - Sunday</p>
+        <p class="font-light">10:00am - 05:00pm</p>
+        <div class="flex gap-2 mt-12">
+            <i class="fa-solid fa-location-dot text-orange-500 mt-1"></i>
+            <p>374 William S Canning Rivd, Fall River MA, 272104</p>
+        </div>
+        <div class="flex gap-2 items-center mt-12">
+            <i class="fa-solid fa-phone text-orange-500"></i>
+            <p>Call for Order : +869 526 616</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-slate-200 w-[30vw] h-[100vh] flex flex-col justify-start items-center py-8"
+    >
+      <h1 class="text-4xl font-medium font-serif">Reservations</h1>
+      <h1 class="italic mt-2 text-orange-600 font-semibold font-sans">Book A Table</h1>
+      <form action="" class="flex mt-12 flex-col gap-6">
+        <input type="text" placeholder="Total Person" class="border-none outline-none rounded-md p-4 flex justify-between items-center w-96 placeholder:text-slate-500">
+        <input type="text" placeholder="Select Date" class="border-none outline-none rounded-md p-4 flex justify-between items-center w-96 placeholder:text-slate-500">
+        <input type="text" placeholder="Time" class="border-none outline-none rounded-md p-4 flex justify-between items-center w-96 placeholder:text-slate-500">
+        <textarea name="" class="h-52 outline-none border-none rounded-md w-96" placeholder="Boooking Purpose"></textarea>
+      </form>
+      <button class="bg-orange-600 py-2 px-4 text-white font-semibold mt-6 rounded-md">Send Message</button>
+    </div>
+  </body>
+</html>
