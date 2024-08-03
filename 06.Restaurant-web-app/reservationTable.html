@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="p-0 m-0 box-border">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Reservation Table</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="bg-black w-screen h-screen text-white">
+    <div class="flex justify-center items-center h-full gap-10">
+      <div class="flex flex-col gap-6 items-center max-w-[40vw]">
+        <h1 class="text-orange-600 font-serif text-2xl italic">Reservations</h1>
+        <h1 class="mt-4 font-serif text-5xl text-yellow-100">
+          Booking A Table
+        </h1>
+        <p class="max-w-[28vw] text-center mt-4 font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa
+          magnam voluptate repellendus eius distinctio sit ad.
+        </p>
+        <div class="relative">
+          <div class="h-1 w-96 bg-orange-400 rounded-full my-4"></div>
+          <div
+            class="h-4 w-4 bg-orange-400 rotate-45 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          ></div>
+        </div>
+        <form
+          action=""
+          class="text-orange-400 max-w-[90%] mt-12 flex flex-col gap-2"
+        >
+          <input
+            type="text"
+            placeholder="Name"
+            class="bg-transparent outline-none border-2 border-orange-400 placeholder:text-orange-400 w-[20vw]"
+          />
+          <div class="flex w-[20vw] justify-between">
+            <input
+              type="number"
+              placeholder="Phone"
+              class="bg-transparent outline-none border-2 border-orange-400 placeholder:text-orange-400 w-[9vw]"
+            />
+            <input
+              type="time"
+              placeholder="Time"
+              class="bg-transparent outline-none border-2 border-orange-400 placeholder:text-orange-400 w-[9vw]"
+            />
+          </div>
+          <div class="flex w-[20vw] justify-between">
+            <input
+              type="number"
+              placeholder="People"
+              class="bg-transparent outline-none border-2 border-orange-400 placeholder:text-orange-400 w-[9vw]"
+            />
+            <input
+              type="date"
+              placeholder="Date"
+              class="bg-transparent outline-none border-2 border-orange-400 placeholder:text-orange-400 w-[9vw]"
+            />
+          </div>
+        </form>
+        <button
+          class="w-[20vw] border-2 border-orange-400 mt-4 py-2 text-orange-500"
+        >
+          Book Now
+        </button>
+      </div>
+      <div class="w-[28vw]">
+        <img src="Assets/Images/Table.jpg" class="w-full rounded-lg" />
+      </div>
+    </div>
+  </body>
+</html>
